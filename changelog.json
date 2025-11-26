@@ -1,0 +1,63 @@
+{
+  "releases": [
+    {
+      "version": "2.7.0",
+      "releaseDate": "2025-01-15T10:00:00Z",
+      "changelog": {
+        "new": [
+          "Added 3D mode with glTF/GLB support using PIXI3D",
+          "Unified project system for Spine and 3D assets",
+          "New export system for project JSON configurations",
+          "Added system requirements display"
+        ],
+        "improved": [
+          "Enhanced filter panel with real-time preview",
+          "Better memory management for large models",
+          "Improved UI responsiveness and animations",
+          "Updated to Electron 39.2.0"
+        ],
+        "fixed": [
+          "Fixed WebGL context loss on Windows 11",
+          "Fixed file loading errors in some edge cases",
+          "Fixed crash when switching between modes rapidly",
+          "Fixed filter parameters not saving correctly"
+        ]
+      }
+    },
+    {
+      "version": "2.6.6",
+      "releaseDate": "2024-12-10T10:00:00Z",
+      "changelog": {
+        "new": [
+          "Added more PIXI filters support",
+          "New help system with mode-specific guides"
+        ],
+        "improved": [
+          "Better error handling for corrupted files",
+          "Optimized rendering performance"
+        ],
+        "fixed": [
+          "Fixed animation playback issues",
+          "Fixed export dialog bugs"
+        ]
+      }
+    },
+    {
+      "version": "2.5.1",
+      "releaseDate": "2024-11-05T10:00:00Z",
+      "changelog": {
+        "new": [
+          "Initial Spine mode release",
+          "Filter system implementation"
+        ],
+        "improved": [
+          "UI/UX improvements",
+          "Performance optimizations"
+        ],
+        "fixed": [
+          "Various bug fixes"
+        ]
+      }
+    }
+  ]
+}
