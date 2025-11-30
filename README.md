@@ -15,8 +15,8 @@ Fornisce **link HTTP diretti** ai file di installazione per:
 ## File Disponibili
 
 ### macOS
-- `Pixi-Studio-2.9.81.dmg` (99 MB) - DMG universale
-- `Pixi-Studio-2.9.81-mac.zip` (105 MB) - ZIP per Mac App Store
+- `Pixi Studio-2.9.86-mac.zip` (110 MB) - Intel (x64)
+- `Pixi Studio-2.9.86-arm64-mac.zip` (105 MB) - Apple Silicon (ARM64)
 
 ### Windows
 - `Pixi-Studio-Setup-2.9.81.exe` (86 MB) - Installer
@@ -28,8 +28,8 @@ Fornisce **link HTTP diretti** ai file di installazione per:
 ## Link Diretti
 
 ```
-https://obawan.github.io/pixistudio-updates/Pixi-Studio-2.9.81.dmg
-https://obawan.github.io/pixistudio-updates/Pixi-Studio-2.9.81-mac.zip
+https://obawan.github.io/pixistudio-updates/Pixi%20Studio-2.9.86-mac.zip
+https://obawan.github.io/pixistudio-updates/Pixi%20Studio-2.9.86-arm64-mac.zip
 https://obawan.github.io/pixistudio-updates/Pixi-Studio-Setup-2.9.81.exe
 https://obawan.github.io/pixistudio-updates/Pixi-Studio-Portable-2.9.81.exe
 https://obawan.github.io/pixistudio-updates/changelog.json

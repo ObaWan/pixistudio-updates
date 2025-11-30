@@ -1,6 +1,25 @@
 {
   "releases": [
     {
+      "version": "2.9.86",
+      "releaseDate": "2025-11-30T12:00:00Z",
+      "changelog": {
+        "new": [],
+        "improved": [],
+        "fixed": [
+          "Fixed filter persistence: filters now correctly save and load in both Spine and 3D modes",
+          "Fixed FiltersManager reference management: now uses live window array references",
+          "Fixed filter button states: Save/Clear buttons properly enable/disable after loading projects",
+          "Fixed cross-mode contamination: switching between modes no longer leaves stale button states",
+          "Fixed markUnsaved callback: filter changes and light deletions now show unsaved indicator",
+          "Fixed project buttons (Close/Save/Save As) not enabling after loading .pixistudio files",
+          "Added Spine version validation: blocks files exported with version > 4.1.x",
+          "Fixed load button state: now disabled until all three file types selected",
+          "Fixed modal close button styling with proper size, colors, and hover effects"
+        ]
+      }
+    },
+    {
       "version": "2.7.0",
       "releaseDate": "2025-01-15T10:00:00Z",
       "changelog": {
