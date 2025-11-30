@@ -1,0 +1,11 @@
+version: 2.9.87
+files:
+  - url: Pixi-Studio-2.9.87-arm64-mac.zip
+    sha512: a1Eh5rn9hRpfJ4NS1goLLkYA2kK1U8t4y3KBKnynHi4hspgcDEP3mUiL1lsbPqyG2cHTnjifrubl/VQm9H5+8Q==
+    size: 109599325
+  - url: Pixi-Studio-2.9.87-mac.zip
+    sha512: jlsYrx8UmeA73B/TXmckjCJy0SfGZv5YQrN23e+YdUaKvtvYejlxJhNSr91K8XpZBU1EvEEacwf/7z+JikdXIg==
+    size: 114862547
+path: Pixi-Studio-2.9.87-arm64-mac.zip
+sha512: a1Eh5rn9hRpfJ4NS1goLLkYA2kK1U8t4y3KBKnynHi4hspgcDEP3mUiL1lsbPqyG2cHTnjifrubl/VQm9H5+8Q==
+releaseDate: '2025-11-30T23:46:52.568Z'
