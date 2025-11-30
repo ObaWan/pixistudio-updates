@@ -15,12 +15,12 @@ Fornisce **link HTTP diretti** ai file di installazione per:
 ## File Disponibili
 
 ### macOS
-- `Pixi Studio-2.9.86-mac.zip` (110 MB) - Intel (x64)
-- `Pixi Studio-2.9.86-arm64-mac.zip` (105 MB) - Apple Silicon (ARM64)
+- `Pixi Studio-2.9.87-mac.zip` (110 MB) - Intel (x64)
+- `Pixi Studio-2.9.87-arm64-mac.zip` (105 MB) - Apple Silicon (ARM64)
 
 ### Windows
-- `PIXI-STUDIO-Setup-2.9.86.exe` (88 MB) - Installer
-- `PIXI-STUDIO-Portable-2.9.86.exe` (87 MB) - Versione portabile
+- `PIXI-STUDIO-Setup-2.9.87.exe` (88 MB) - Installer
+- `PIXI-STUDIO-Portable-2.9.87.exe` (87 MB) - Versione portabile
 
 ### API
 - `changelog.json` - Storico versioni per auto-update check
@@ -28,10 +28,10 @@ Fornisce **link HTTP diretti** ai file di installazione per:
 ## Link Diretti
 
 ```
-https://obawan.github.io/pixistudio-updates/Pixi%20Studio-2.9.86-mac.zip
-https://obawan.github.io/pixistudio-updates/Pixi%20Studio-2.9.86-arm64-mac.zip
-https://obawan.github.io/pixistudio-updates/PIXI-STUDIO-Setup-2.9.86.exe
-https://obawan.github.io/pixistudio-updates/PIXI-STUDIO-Portable-2.9.86.exe
+https://obawan.github.io/pixistudio-updates/Pixi%20Studio-2.9.87-mac.zip
+https://obawan.github.io/pixistudio-updates/Pixi%20Studio-2.9.87-arm64-mac.zip
+https://obawan.github.io/pixistudio-updates/PIXI-STUDIO-Setup-2.9.87.exe
+https://obawan.github.io/pixistudio-updates/PIXI-STUDIO-Portable-2.9.87.exe
 https://obawan.github.io/pixistudio-updates/changelog.json
 ```
 
