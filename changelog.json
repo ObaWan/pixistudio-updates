@@ -1,6 +1,27 @@
 {
   "releases": [
     {
+      "version": "2.9.87",
+      "releaseDate": "2025-12-01T00:00:00Z",
+      "changelog": {
+        "new": [],
+        "improved": [
+          "Settings Panel GPU Backend Display: Settings now correctly show active GPU backend",
+          "Unified Slider Styling: All range sliders use consistent blue color with dynamic gradient",
+          "Windows GPU Backend Optimization: OpenGL default for maximum stability on all GPUs",
+          "Generic Error Messages: Spine rendering errors now show user-friendly messages"
+        ],
+        "fixed": [
+          "CRITICAL: Fixed Spine 4.1.21/4.1.22 texture loading in Electron environment",
+          "Fixed texture mapping: now uses exact atlas-specified names instead of normalizing",
+          "Fixed writeTempFile routing: PNG/JPG/WEBP correctly go to spine-checker directory",
+          "Fixed GPU backend detection in Settings panel using correct IPC communication",
+          "Fixed slider colors across all modes (Spine speed, filter parameters, 3D sliders)",
+          "Intel Iris Xe compatibility: auto-detects and disables incompatible Vulkan option"
+        ]
+      }
+    },
+    {
       "version": "2.9.86",
       "releaseDate": "2025-11-30T12:00:00Z",
       "changelog": {
