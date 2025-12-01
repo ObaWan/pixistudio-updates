@@ -19,8 +19,8 @@ Fornisce **link HTTP diretti** ai file di installazione per:
 - `Pixi Studio-2.9.87-arm64-mac.zip` (105 MB) - Apple Silicon (ARM64)
 
 ### Windows
-- `PIXI-STUDIO-Setup-2.9.87.exe` (88 MB) - Installer
-- `PIXI-STUDIO-Portable-2.9.87.exe` (87 MB) - Versione portabile
+- `PIXI-STUDIO-Setup-2.9.87.exe` (86 MB) - Installer
+- `PIXI-STUDIO-Portable-2.9.87.exe` (86 MB) - Versione portabile
 
 ### API
 - `changelog.json` - Storico versioni per auto-update check
