@@ -1,8 +1,8 @@
 version: 2.9.87
 files:
   - url: PIXI-STUDIO-Setup-2.9.87.exe
-    sha512: hy2yv72O1YEo++h0HYxR0bscwMmMbS1DZsRD+8yCij81luvYbJinEV83rdAgd5Q1RBa0tBCuuEkzSLLnzGfmNA==
-    size: 90194373
+    sha512: nzfhw3JJO/adGwCqTi7I2Ju9HeUJZMW093LiohaxCNvtyTjfGKVea+v/Y/IJoBZftYlYhTddD+EwqK1T47dxuw==
+    size: 90386428
 path: PIXI-STUDIO-Setup-2.9.87.exe
-sha512: hy2yv72O1YEo++h0HYxR0bscwMmMbS1DZsRD+8yCij81luvYbJinEV83rdAgd5Q1RBa0tBCuuEkzSLLnzGfmNA==
-releaseDate: '2025-11-30T23:58:01.576Z'
+sha512: nzfhw3JJO/adGwCqTi7I2Ju9HeUJZMW093LiohaxCNvtyTjfGKVea+v/Y/IJoBZftYlYhTddD+EwqK1T47dxuw==
+releaseDate: '2025-12-01T00:26:27.944Z'
