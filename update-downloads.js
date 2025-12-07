@@ -1,7 +1,7 @@
 // Auto-update download information from GitHub Releases (latest release)
 async function updateDownloadInfo() {
     try {
-        // Get the latest release (not just v2.9.87)
+        // Get the latest release
         const response = await fetch('https://api.github.com/repos/ObaWan/pixistudio-updates/releases/latest');
         const release = await response.json();
         
@@ -10,26 +10,42 @@ async function updateDownloadInfo() {
             return;
         }
         
-        const version = release.tag_name.replace('v', ''); // e.g., "2.9.87"
+        const version = release.tag_name.replace('v', '');
         
         // Update version in all cards
         document.querySelectorAll('[data-version]').forEach(el => {
             el.textContent = el.textContent.replace(/v?\d+\.\d+\.\d+/, `v${version}`);
         });
         
-        // Map asset names to card selectors (dynamic patterns)
+        // Map asset names to card selectors (more flexible patterns)
         const assetPatterns = {
-            'mac-intel': { pattern: /-mac\.zip$/, selector: '[data-file="mac-intel"]' },
-            'mac-arm': { pattern: /-arm64-mac\.zip$/, selector: '[data-file="mac-arm"]' },
-            'win-setup': { pattern: /Setup-.*\.exe$/, selector: '[data-file="win-setup"]' },
-            'win-portable': { pattern: /Portable-.*\.exe$/, selector: '[data-file="win-portable"]' }
+            'mac-intel': { 
+                pattern: /mac\.zip$/i,  // Matches any file ending with "mac.zip"
+                notPattern: /arm64/i,   // But not containing "arm64"
+                selector: '[data-file="mac-intel"]' 
+            },
+            'mac-arm': { 
+                pattern: /arm64.*mac\.zip$/i,  // Matches "arm64" before "mac.zip"
+                selector: '[data-file="mac-arm"]' 
+            },
+            'win-setup': { 
+                pattern: /setup.*\.exe$/i,  // Matches "Setup" before ".exe"
+                selector: '[data-file="win-setup"]' 
+            },
+            'win-portable': { 
+                pattern: /portable.*\.exe$/i,  // Matches "Portable" before ".exe"
+                selector: '[data-file="win-portable"]' 
+            }
         };
         
         // Process each asset
         release.assets.forEach(asset => {
             // Find which platform this asset belongs to
             for (const [platform, config] of Object.entries(assetPatterns)) {
-                if (config.pattern.test(asset.name)) {
+                const matchesPattern = config.pattern.test(asset.name);
+                const matchesNotPattern = config.notPattern ? !config.notPattern.test(asset.name) : true;
+                
+                if (matchesPattern && matchesNotPattern) {
                     const card = document.querySelector(config.selector);
                     if (card) {
                         // Update download link
