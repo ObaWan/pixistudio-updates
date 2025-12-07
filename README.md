@@ -15,8 +15,14 @@ Fornisce **link HTTP diretti** ai file di installazione per:
 ## File Disponibili
 
 ### macOS
-- `Pixi Studio-2.9.87-mac.zip` (110 MB) - Intel (x64)
-- `Pixi Studio-2.9.87-arm64-mac.zip` (105 MB) - Apple Silicon (ARM64)
+- `Pixi-Studio-2.9.87-mac.zip` (115 MB) - Intel (x64)
+- `Pixi-Studio-2.9.87-arm64-mac.zip` (107 MB) - Apple Silicon (ARM64)
+
+⚠️ **macOS Users**: L'app non è notarizzata da Apple. Dopo il download:
+1. **Decomprimi** lo ZIP
+2. **Tasto destro** su `Pixi Studio.app` → **Apri** (prima volta)
+3. Conferma apertura nel dialog di sicurezza
+4. Oppure usa terminale: `xattr -cr "/path/to/Pixi Studio.app" && open "/path/to/Pixi Studio.app"`
 
 ### Windows
 - `PIXI-STUDIO-Setup-2.9.87.exe` (86 MB) - Installer
