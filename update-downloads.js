@@ -58,7 +58,7 @@ async function updateDownloadInfo() {
                             sizeEl.textContent = `${sizeMB} MB`;
                         }
                         
-                        // Update date
+                        // Update date with build counter
                         const dateEl = card.querySelector('[data-info="date"]');
                         if (dateEl) {
                             const date = new Date(asset.updated_at);
@@ -67,7 +67,12 @@ async function updateDownloadInfo() {
                                 month: 'short', 
                                 day: 'numeric' 
                             });
-                            dateEl.textContent = formatted;
+                            
+                            // Generate build counter from timestamp (changes with each new upload)
+                            const timestamp = new Date(asset.updated_at).getTime();
+                            const buildNumber = Math.floor(timestamp / 1000) % 10000;
+                            
+                            dateEl.textContent = `${formatted} • Build ${buildNumber}`;
                         }
                     }
                     break;
