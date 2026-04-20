@@ -43,16 +43,16 @@ const data = await response.json();
 const latestVersion = data.releases[0].version;
 ```
 
-## Aggiornare Releases
+## Updating Releases
 
-1. Compila nuova versione: `npm run build` o `npm run build-win`
-2. Copia file da `dist/` a questo repo con nome: `Pixi-Studio-X.X.X.dmg`
-3. Aggiorna `changelog.json` con nuova versione
-4. Commit e push → GitHub Pages auto-deploys in ~1 min
+1. Build new version: `npm run build` or `npm run build-win`
+2. Copy files from `dist/` to this repo with name: `Pixi-Studio-X.X.X.dmg`
+3. Update `changelog.json` with new version
+4. Commit and push → GitHub Pages auto-deploys in ~1 min
 
-## Note
+## Notes
 
-- Nessun index.html - repo serve solo file statici
-- Link diretti funzionano immediatamente
-- CORS abilitato automaticamente da GitHub Pages
-- Download disponibili anche da [Releases](https://github.com/ObaWan/pixistudio-updates/releases)
+- No index.html — repo serves static files only
+- Direct links work immediately
+- CORS enabled automatically by GitHub Pages
+- Downloads also available from [Releases](https://github.com/ObaWan/pixistudio-updates/releases)
