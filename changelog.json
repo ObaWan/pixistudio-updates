@@ -1,6 +1,23 @@
 {
   "releases": [
     {
+      "version": "2.9.9",
+      "releaseDate": "2026-04-27T00:00:00Z",
+      "changelog": {
+        "new": [
+          "Material panel: mesh count badge on each material row (tooltip: 'Used by X mesh(es)')",
+          "Export: Transparent Background checkbox for PNG and video exports"
+        ],
+        "improved": [],
+        "fixed": [
+          "Export: video recording showed black background due to WebGL alpha=0 — fixed via 2D composite canvas",
+          "3D: false positive TEXTURE MISSING WARNING on project load (async texture loading)",
+          "3D: normalScale and occlusionStrength sliders now update the actual PIXI3D shader properties",
+          "3D: project reload now correctly restores material settings (_onNextModelLoaded)"
+        ]
+      }
+    },
+    {
       "version": "2.9.87",
       "releaseDate": "2025-12-01T00:00:00Z",
       "changelog": {
