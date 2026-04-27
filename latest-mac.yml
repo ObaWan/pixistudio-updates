@@ -1,11 +1,11 @@
 version: 2.9.9
 files:
-  - url: Pixi-Studio-2.9.9-arm64-mac.zip
+  - url: Pixi.Studio-2.9.9-arm64-mac.zip
     sha512: EC35kHl6dV0m3dUIHETCfBH20K5slGwOzHUY32LhtstrSsGz9vjZk0LnzH5qYT01sSgCKA+tjdoznLH6w8LSTA==
     size: 108831321
-  - url: Pixi-Studio-2.9.9-mac.zip
+  - url: Pixi.Studio-2.9.9-mac.zip
     sha512: kaqsnGzVqG5khzmlrC+ObF5fJgsi/3kbTzuhyeV7YXb2FmfrWcRUtRvNL4igzFU5A/mbyYyaF3oJ+/6/MF1wMg==
     size: 116878180
-path: Pixi-Studio-2.9.9-arm64-mac.zip
+path: Pixi.Studio-2.9.9-arm64-mac.zip
 sha512: EC35kHl6dV0m3dUIHETCfBH20K5slGwOzHUY32LhtstrSsGz9vjZk0LnzH5qYT01sSgCKA+tjdoznLH6w8LSTA==
 releaseDate: '2026-04-27T00:00:00.000Z'
