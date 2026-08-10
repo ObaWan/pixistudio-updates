@@ -1,58 +1,58 @@
 # Pixi Studio Updates
 
-📦 **Release files hosting** for Pixi Studio via GitHub Pages.
+Public distribution repository for **Pixi Studio**.
 
-🔗 **Base URL**: https://obawan.github.io/pixistudio-updates/
+🔗 **Download page:** https://obawan.github.io/pixistudio-updates/
 
-## Purpose
+> The Pixi Studio source code is kept in a separate private repository. This public repository contains only distribution assets and public-facing update information.
 
-Fornisce **link HTTP diretti** ai file di installazione per:
-- Microsoft Store (verifica versione)
-- Mac App Store (verifica versione)
-- Auto-update system dell'app
-- Download diretto
+## What lives here
 
-## File Disponibili
+- Public download page (`index.html`)
+- Dynamic download metadata (`update-downloads.js`)
+- Public changelog (`changelog.json`)
+- Electron auto-update metadata (`latest.yml`, `latest-mac.yml`)
+- GitHub Releases containing Windows and macOS builds
+- Public icons/assets required by the download page
 
-### macOS
-- `Pixi-Studio-2.9.87-mac.zip` (115 MB) - Intel (x64)
-- `Pixi-Studio-2.9.87-arm64-mac.zip` (107 MB) - Apple Silicon (ARM64)
+## Distribution architecture
 
-### Windows
-- `PIXI-STUDIO-Setup-2.9.87.exe` (86 MB) - Installer
-- `PIXI-STUDIO-Portable-2.9.87.exe` (86 MB) - Versione portabile
-
-### API
-- `changelog.json` - Storico versioni per auto-update check
-
-## Link Diretti
-
+```text
+Private source repository
+ObaWan/pixistudio
+        │
+        │ build / release
+        ▼
+Public distribution repository
+ObaWan/pixistudio-updates
+        │
+        ├── GitHub Releases → installers and update packages
+        ├── GitHub Pages → public download page
+        └── update metadata → Electron Updater
 ```
-https://obawan.github.io/pixistudio-updates/Pixi%20Studio-2.9.87-mac.zip
-https://obawan.github.io/pixistudio-updates/Pixi%20Studio-2.9.87-arm64-mac.zip
-https://obawan.github.io/pixistudio-updates/PIXI-STUDIO-Setup-2.9.87.exe
-https://obawan.github.io/pixistudio-updates/PIXI-STUDIO-Portable-2.9.87.exe
+
+The download page queries the latest GitHub Release and updates the displayed version, download URLs, sizes and dates automatically. New releases therefore do not require manually editing `index.html`.
+
+## Auto-update
+
+The desktop app is configured to use this repository as its GitHub update provider. Electron Updater reads release metadata and assets from the public releases here, while the application source remains private.
+
+Public changelog endpoint:
+
+```text
 https://obawan.github.io/pixistudio-updates/changelog.json
 ```
 
-## Auto-Update Implementation
+## Publishing a release
 
-```javascript
-const response = await fetch('https://obawan.github.io/pixistudio-updates/changelog.json');
-const data = await response.json();
-const latestVersion = data.releases[0].version;
-```
+1. Update the version and changelog in the private `ObaWan/pixistudio` repository.
+2. Build the Windows/macOS packages from the private source tree.
+3. Publish the generated files as a GitHub Release in this repository.
+4. Verify the public download page.
+5. Verify automatic update from an older Pixi Studio build.
 
-## Updating Releases
+The detailed build/release procedure is maintained in the private source repository (`PIXI Studio/RELEASE_GUIDE.md`).
 
-1. Build new version: `npm run build` or `npm run build-win`
-2. Copy files from `dist/` to this repo with name: `Pixi-Studio-X.X.X.dmg`
-3. Update `changelog.json` with new version
-4. Commit and push → GitHub Pages auto-deploys in ~1 min
+## Privacy boundary
 
-## Notes
-
-- No index.html — repo serves static files only
-- Direct links work immediately
-- CORS enabled automatically by GitHub Pages
-- Downloads also available from [Releases](https://github.com/ObaWan/pixistudio-updates/releases)
+This repository must contain **distribution-only material**. Do not copy application source code, private development documentation, credentials, signing secrets or proprietary source assets here.
